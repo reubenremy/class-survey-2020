@@ -1,0 +1,5 @@
+<form name="survey-form" action="/" method="POST">
+    ${classInfoData.map(entry =>{
+        return `<p>${entry.topic_name}</p>`
+    }).join('')}
+</form>

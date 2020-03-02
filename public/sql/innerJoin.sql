@@ -1,0 +1,1 @@
+select * from class_status inner join topics on class_status.id = topics.status_id;
