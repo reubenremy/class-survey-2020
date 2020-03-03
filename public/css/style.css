@@ -33,7 +33,7 @@ nav h1 {
   font-size: 1.1em;
   display: flex;
   width: 100%;
-  margin-top: 0px;
+  margin-top: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -82,7 +82,8 @@ form {
 }
 
 footer {
-  margin-top: 100px;
+  position: fixed;
+  margin-top: 75px;
   border-top-left-radius: 200%;
   background: linear-gradient(45deg,rgba(240, 158, 50, 0.87),rgba(240, 213, 62, 0.87));
   text-align: center;
@@ -91,7 +92,7 @@ footer {
   height: 100px;
 } footer a {
   font-size: 0.5em;
-  line-height: 10;
+  line-height: 7;
   color: rgba(245, 183, 12, 0.945);
   text-decoration: none;
 } footer a:hover {
