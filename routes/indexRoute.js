@@ -5,14 +5,14 @@ const express = require('express'),
 /* GET home page. */
 router.get('/', async (req, res) => {
   const classInfoData = await surveyModel.getAllTopicData();
-  const topicStatusData = await surveyModel.getAllStatuses();
-
+  const topicInfoData = await surveyModel.getAllStatus();
+  // console.log("topic info data", topicInfoData);
 
   res.render('template', {
     locals: {
       title: 'Express',
       classInfoData: classInfoData,
-      topicStatusData: topicStatusData
+      topicInfoData: topicInfoData,
     },
     partials: {
       partial: 'partial-index'
