@@ -4,13 +4,13 @@ const express = require('express'),
 
 /* GET home page. */
 router.get('/', async (req, res) => {
+  const title = 'Class Survey 2020'
   const classInfoData = await surveyModel.getAllTopicData();
   const topicInfoData = await surveyModel.getAllStatus();
   // console.log("topic info data", topicInfoData);
-
   res.render('template', {
     locals: {
-      title: 'Express',
+      title: title,
       classInfoData: classInfoData,
       topicInfoData: topicInfoData,
     },
