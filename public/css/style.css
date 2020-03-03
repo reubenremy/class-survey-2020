@@ -62,7 +62,7 @@ button {
   background-color: #FA5253;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 200px;
   outline: none;
   width: 400px;
   height: 50px;
@@ -70,11 +70,10 @@ button {
   
   font-size: 1em;
 } button:hover {
-  animation: 2s growShrink ease-in infinite;
+  animation: 1s growShrink ease-in infinite;
   transition: 1s;
 } button:active {
   transform: scale(0.95);
-  animation: 0.15s crazy ease-in infinite;
   background-color:rgba(240, 158, 50, 0.87);
   transition: 0.5s;
   font-size: 1.1em;
@@ -82,27 +81,15 @@ button {
 }
 
 @keyframes growShrink {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.98);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(1); }
+  50% { transform: scale(0.98); }
+  100% { transform: scale(1); }
 }
 
 @keyframes crazy {
-  0% {
-    transform: rotate(0.5deg);
-  }
-  50% {
-    transform: rotate(-0.5deg);
-  }
-  100% {
-    transform: rotate(0.5deg);
-  }
+  0% { transform: rotate(0.5deg); }
+  50% { transform: rotate(-0.5deg); }
+  100% { transform: rotate(0.5deg); }
 }
 
 form {
@@ -125,3 +112,4 @@ form {
   color: #32323E;
   transition: 1s;
 }
+
