@@ -16,9 +16,10 @@ a {
 
 .nav-wrapper {
   display:flex;
+  position: absolute;
   justify-content: center;
   align-items: center;
-  height: 125px;
+  height: 100px;
   background: linear-gradient(45deg,#FA5253,rgb(250, 107, 82));
   width: 100%;
   border-bottom-right-radius: 200%;
@@ -33,7 +34,7 @@ nav h1 {
   font-size: 1.1em;
   display: flex;
   width: 100%;
-  margin-top: 50px;
+  height: 90vh;
   justify-content: center;
   align-items: center;
 }
@@ -69,33 +70,58 @@ button {
   
   font-size: 1em;
 } button:hover {
-  transform: scale(0.98);
+  animation: 2s growShrink ease-in infinite;
   transition: 1s;
 } button:active {
   transform: scale(0.95);
+  animation: 0.15s crazy ease-in infinite;
   background-color:rgba(240, 158, 50, 0.87);
   transition: 0.5s;
+  font-size: 1.1em;
+  color: #32323E;
+}
+
+@keyframes growShrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes crazy {
+  0% {
+    transform: rotate(0.5deg);
+  }
+  50% {
+    transform: rotate(-0.5deg);
+  }
+  100% {
+    transform: rotate(0.5deg);
+  }
 }
 
 form {
   text-indent: 50px;
 }
 
-footer {
-  position: fixed;
-  margin-top: 75px;
+.footer {
   border-top-left-radius: 200%;
   background: linear-gradient(45deg,rgba(240, 158, 50, 0.87),rgba(240, 213, 62, 0.87));
   text-align: center;
   font-family: 'Spartan',sans-serif;
   width: 100%;
   height: 100px;
-} footer a {
+} .footer a {
   font-size: 0.5em;
   line-height: 7;
   color: rgba(245, 183, 12, 0.945);
   text-decoration: none;
-} footer a:hover {
+} .footer a:hover {
   color: #32323E;
   transition: 1s;
 }
