@@ -42,9 +42,9 @@ select {
   border: none;
   border-bottom: 5px solid transparent;
   outline: none;
-  width: 150px;
+  width: 125px;
   height: 40px;
-  margin: 5px;
+  text-align: center;
   font-size: 1em;
 } select:hover {
   border-bottom: 5px solid #FA5253;
@@ -66,4 +66,8 @@ button {
 } button:hover {
   transform: scale(0.98);
   transition: 0.75s;
+}
+
+form {
+  text-indent: 50px;
 }
