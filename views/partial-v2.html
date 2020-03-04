@@ -15,7 +15,7 @@
                         ${topicInfoData.map(status => `
                             <label class="v2-input">
                                 ${status.status_title}
-                                <input type='radio' name="${status.topic}" value="${status.id}" 
+                                <input type='radio' name="${topic.topic_name}" value="${status.id}" 
                                 ${(status.status === status.id) ? 'checked' : ''}>
                             </label>
                         `).join('')}
