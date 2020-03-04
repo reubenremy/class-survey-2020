@@ -40,6 +40,13 @@ nav h1 {
   align-items: center;
 }
 
+.btn-wrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 select {
   font-family: 'spartan';
   background-color: #32323E;
@@ -67,7 +74,7 @@ button {
   outline: none;
   width: 400px;
   height: 50px;
-  margin: 5px;
+  margin: 5px auto;
   
   font-size: 1em;
 } button:hover {
@@ -114,6 +121,7 @@ form {
   transition: 1s;
 }
 
+/* SUCCESS PAGE  */
 .success-message {
   display: flex;
   justify-content: center;
@@ -131,3 +139,32 @@ form {
   transition: 1s;
 }
 
+/* Version Two Styles */
+table {;
+  border-collapse: collapse;
+}
+
+tr {
+  padding: 20px;
+}
+
+td, th {
+  /* border: 1px dotted red; */
+  padding: 20px 10px;
+}
+
+.v2-input {
+  background-color: rgb(74, 74, 80);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 20px 10px;
+  margin: 5px;
+  opacity: 0.5;
+}.v2-input:hover {
+  opacity: 1;
+  transition: 1s;
+  color: #32323E;
+  background: linear-gradient(45deg,#FA5253,rgb(250, 107, 82));
+}.v2-input input {
+  margin: 10px;
+}
