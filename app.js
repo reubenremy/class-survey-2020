@@ -4,6 +4,7 @@ const express = require('express'),
     es6renderer = require('express-es6-template-engine');
 
     indexRouter = require('./routes/indexRoute'),
+    successRouter = require('./routes/successRoute'),
 
     app = express();
 
@@ -20,5 +21,6 @@ app.use(express.static('public'));
 
 
 app.use('/', indexRouter);
+app.use('/success', successRouter);
 
 module.exports = app;
