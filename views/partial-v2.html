@@ -10,9 +10,9 @@
             <tbody>
             ${rankingData.map(topic => `
                 <tr>
-                    <td class="topic-name">${topic.topic_name}</td> 
+                    <td >${topic.topic_name}</td> 
                     <td>
-                        ${topicInfoData.map(rank => `
+                        ${topicData.map(rank => `
                             <label class="v2-input">
                                 ${rank.rank_name}
                                 <input type='radio' name="${topic.topic_name}" value="${rank.id}" 

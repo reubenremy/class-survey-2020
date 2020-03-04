@@ -4,7 +4,7 @@ const express = require('express'),
 
 /* GET home page. */
 router.get('/', async (req, res) => {
-  const title = 'Class Survey 2020 v2'
+  const title = 'SurveyGenie'
   const rankingData = await surveyModel.getAllTopics();
   const topicData = await surveyModel.getAllRanks();
   // console.log("topic info data", topicData);

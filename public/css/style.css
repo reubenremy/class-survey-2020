@@ -158,8 +158,10 @@ td {
   cursor: pointer;
   padding: 20px 10px;
   margin: 5px;
-  opacity: 0.5;
-}.v2-input:hover {
+}
+
+.v2-input:hover,
+.v2-selected {
   opacity: 1;
   font-weight: bold;
   transition: 1s;
