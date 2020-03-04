@@ -20,13 +20,13 @@ router.get('/', async (req, res) => {
   });
 });
 
-router.post('/', (req,res) => {
+router.post("/", async (req,res) => {
   for (let key in req.body) {
     // console.log(key, req.body[key]);
-    surveyModel.update(key, req.body[key]);
+  console.log(await surveyModel.update(key, req.body[key]));
   }
 
-  // res.status(200).redirect('/');
+  res.status(200).redirect('/');
 });
 
 module.exports = router;
