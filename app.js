@@ -5,6 +5,7 @@ const express = require('express'),
 
     indexRouter = require('./routes/indexRoute'),
     successRouter = require('./routes/successRoute'),
+    v2Router = require('./routes/v2Route')
 
     app = express();
 
@@ -22,5 +23,6 @@ app.use(express.static('public'));
 
 app.use('/', indexRouter);
 app.use('/success', successRouter);
+app.use('/v2',v2Router);
 
 module.exports = app;

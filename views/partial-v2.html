@@ -1,0 +1,12 @@
+<div class="form-wrapper">
+    <form action="/" method="POST">
+        ${classInfoData.map(topics => {
+            return `<p>I am <select class="custom-select" name="${topics.topic_name}">
+                ${topicInfoData.map(status => {
+                    return `<option value="${status.id}">${status.status_title}</option>`
+                }).join('')}
+            </select>  at <strong>${topics.topic_name}</strong>.</p>`
+        }).join('')}
+        <button type="submit">Rank</button>
+    </form>
+</div>
