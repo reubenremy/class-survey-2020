@@ -4,19 +4,19 @@
             <thead>
                 <tr>
                     <th>Topic</th>
-                    <th>Current Status</th>
+                    <th>Current Rank</th>
                 </tr>
             </thead>
             <tbody>
-            ${classInfoData.map(topic => `
+            ${rankingData.map(topic => `
                 <tr>
                     <td class="topic-name">${topic.topic_name}</td> 
                     <td>
-                        ${topicInfoData.map(status => `
+                        ${topicInfoData.map(rank => `
                             <label class="v2-input">
-                                ${status.status_title}
-                                <input type='radio' name="${topic.topic_name}" value="${status.id}" 
-                                ${(status.status === status.id) ? 'checked' : ''}>
+                                ${rank.rank_name}
+                                <input type='radio' name="${topic.topic_name}" value="${rank.id}" 
+                                ${(rank.rank === rank.id) ? 'checked' : ''}>
                             </label>
                         `).join('')}
                     </td>

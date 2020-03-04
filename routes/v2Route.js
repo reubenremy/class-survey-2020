@@ -5,14 +5,14 @@ const express = require('express'),
 /* GET home page. */
 router.get('/', async (req, res) => {
   const title = 'Class Survey 2020 v2'
-  const classInfoData = await surveyModel.getAllTopicData();
-  const topicInfoData = await surveyModel.getAllStatus();
-  // console.log("topic info data", topicInfoData);
+  const rankingData = await surveyModel.getAllTopics();
+  const topicData = await surveyModel.getAllRanks();
+  // console.log("topic info data", topicData);
   res.render('template', {
     locals: {
       title: title,
-      classInfoData: classInfoData,
-      topicInfoData: topicInfoData,
+      rankingData: rankingData,
+      topicData: topicData,
     },
     partials: {
       partial: 'partial-v2'
