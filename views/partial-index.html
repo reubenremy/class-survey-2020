@@ -1,11 +1,11 @@
 <div class="form-wrapper">
-    <form name="survey-form" action="/" method="POST">
+    <form action="/" method="POST">
         ${classInfoData.map(topics => {
-            return `<p>I am <select>
+            return `<p>I am <select class="custom-select" name="${topics.topic_name}">
                 ${topicInfoData.map(status => {
                     return `<option value="${status.id}">${status.status_title}</option>`
                 }).join('')}
-            </select class="custom-select">  at <strong>${topics.topic_name}</strong>.</p>`
+            </select>  at <strong>${topics.topic_name}</strong>.</p>`
         }).join('')}
         <button type="submit">Rank</button>
     </form>
