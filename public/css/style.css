@@ -197,11 +197,13 @@ td {
   text-align: center;
   margin: 0 2px;
   border-radius: 100%;
+  opacity: 0;
 }
 
 .version-wrapper a:hover span {
   background: linear-gradient(45deg,#FA5253,rgb(250, 107, 82));
   color: #32323E;
+  opacity: 1;
   font-weight: bold;
   transition: 1.5s;
   margin: 0 10px;
