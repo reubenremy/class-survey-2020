@@ -4,19 +4,19 @@
             <thead>
                 <tr>
                     <th>Topic</th>
-                    <th>Current Ranking</th>
+                    <th>Current Status</th>
                 </tr>
             </thead>
             <tbody>
-            ${topicInfoData.map(topic => `
+            ${classInfoData.map(topic => `
                 <tr>
                     <td class="topic-name">${topic.topic_name}</td> 
-                    <td class="has-input">
-                        ${classInfoData.map(ranking => `
+                    <td>
+                        ${topicInfoData.map(status => `
                             <label class="v2-input">
-                                ${ranking.level_description}
-                                <input type='radio' name="${topic.topic}" value="${ranking.id}" 
-                                ${(topic.ranking === ranking.id) ? 'checked' : ''}>
+                                ${status.status_title}
+                                <input type='radio' name="${status.topic}" value="${status.id}" 
+                                ${(status.status === status.id) ? 'checked' : ''}>
                             </label>
                         `).join('')}
                     </td>
@@ -25,7 +25,7 @@
             </tbody>
         </table>
             <div class="btn-wrapper">
-                <button type="submit">Update Rankings</button>
+                <button type="submit">Submit Rank</button>
             </div>
         </form>
 </div>

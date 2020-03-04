@@ -168,3 +168,7 @@ td, th {
 }.v2-input input {
   margin: 10px;
 }
+
+.version-wrapper a {
+  padding: 20px;
+}
