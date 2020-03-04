@@ -47,6 +47,15 @@ nav h1 {
   width: 100%;
 }
 
+.form-wrapper {
+  height: 50vh;
+}
+
+.v2-form-wrapper table {
+  margin-top: 50px;
+  transform: scale(0.8);
+}
+
 select {
   font-family: 'spartan';
   background-color: #32323E;
@@ -140,18 +149,25 @@ form {
 }
 
 /* Version Two Styles */
-table {;
+table {
   border-collapse: collapse;
+  border-radius: 10px;
+}
+
+th {
+  padding: 20px;
+  font-size: 1.5em;
 }
 
 tr {
   padding: 20px;
 }
 
-td, th {
+td {
   /* border: 1px dotted red; */
   padding: 20px 10px;
 }
+
 
 .v2-input {
   background-color: rgb(74, 74, 80);
@@ -162,11 +178,13 @@ td, th {
   opacity: 0.5;
 }.v2-input:hover {
   opacity: 1;
+  font-weight: bold;
   transition: 1s;
   color: #32323E;
   background: linear-gradient(45deg,#FA5253,rgb(250, 107, 82));
 }.v2-input input {
   margin: 10px;
+  width: 25px;
 }
 
 .version-wrapper a {
