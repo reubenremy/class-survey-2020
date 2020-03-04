@@ -194,6 +194,7 @@ td {
 } 
 
 .version-wrapper span {
+  text-align: center;
   margin: 0 2px;
   border-radius: 100%;
 }
@@ -205,4 +206,23 @@ td {
   transition: 1.5s;
   margin: 0 10px;
   padding: 2px 5px;
+}
+
+.version-wrapper a:focus span {
+  animation: 0.2s explode ease forwards;
+}
+
+@keyframes explode {
+  0% {
+    padding: 0;
+    opacity: 1;
+  }
+  50% {
+    padding: 5px;
+    opacity: 0.5;
+  }
+  100% {
+    padding: 20px;
+    opacity: 0;
+  }
 }
