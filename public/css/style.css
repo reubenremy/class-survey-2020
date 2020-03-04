@@ -130,23 +130,6 @@ form {
   transition: 1s;
 }
 
-/* SUCCESS PAGE  */
-.success-message {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 2em;
-  align-items: center;
-} .success-message a {
-  text-transform: uppercase;
-  font-size: 0.35em;
-  color: rgb(74, 74, 80);
-  text-decoration: none;
-} .success-message a:hover {
-  animation: 0.2s crazy ease-in infinite;
-  color: #FA5253;
-  transition: 1s;
-}
 
 /* Version Two Styles */
 table {
@@ -187,6 +170,39 @@ td {
   width: 25px;
 }
 
+
+/* SUCCESS PAGE  */
+.success-message {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2em;
+  align-items: center;
+} .success-message a {
+  text-transform: uppercase;
+  font-size: 0.35em;
+  color: rgb(74, 74, 80);
+  text-decoration: none;
+} .success-message a:hover {
+  animation: 0.2s crazy ease-in infinite;
+  color: #FA5253;
+  transition: 1s;
+}
+
 .version-wrapper a {
   padding: 20px;
+} 
+
+.version-wrapper span {
+  margin: 0 2px;
+  border-radius: 100%;
+}
+
+.version-wrapper a:hover span {
+  background: linear-gradient(45deg,#FA5253,rgb(250, 107, 82));
+  color: #32323E;
+  font-weight: bold;
+  transition: 1.5s;
+  margin: 0 10px;
+  padding: 2px 5px;
 }
