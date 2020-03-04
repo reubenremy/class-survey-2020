@@ -4,7 +4,7 @@ const express = require('express'),
 router.get('/', (req,res) => {
     res.render('template', {
         locals: {
-            title: 'Thank You!'
+            title: 'Success'
         },
         partials: {
             partial: 'partial-success'

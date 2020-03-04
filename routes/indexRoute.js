@@ -26,7 +26,7 @@ router.post("/", async (req,res) => {
   console.log(await surveyModel.update(key, req.body[key]));
   }
 
-  res.status(200).redirect('/');
+  res.status(200).redirect('/success');
 });
 
 module.exports = router;
